@@ -1,0 +1,89 @@
+appId: com.ajarnspencer.aivoicestudio
+productName: AI Voice Studio
+copyright: Copyright © 2025 Ajarn Spencer Littlewood
+
+directories:
+  output: release
+  buildResources: assets
+
+files:
+  - dist/**/*
+  - electron.js
+  - preload.js
+  - package.json
+
+fileAssociations:
+  - ext: aivoice
+    name: AI Voice Studio Profile
+    description: Professional Vocal Identity Profile
+    role: Editor
+  - ext: vscript
+    name: AI Narration Script
+    description: SSML Narrator Script
+    role: Editor
+
+# Windows Configuration (Microsoft Store)
+win:
+  publisherName: Ajarn Spencer Littlewood
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: appx 
+  icon: assets/icon.ico
+  legalCopyright: Copyright © 2025 Ajarn Spencer Littlewood
+
+appx:
+  identityName: AjarnSpencer.AIVoiceStudio
+  publisher: "CN=Ajarn Spencer Littlewood"
+  publisherDisplayName: Ajarn Spencer Littlewood
+  displayName: AI Voice Studio
+  languages: [en-US]
+
+# Mac Configuration (Apple App Store / MAS)
+mac:
+  target:
+    - dmg
+    - pkg
+    - mas # Essential for Mac App Store
+  category: public.app-category.video
+  icon: assets/icon.icns
+  bundleVersion: 1.1.1
+  identity: null # Your Apple Developer ID
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.plist
+  hardenedRuntime: true
+
+mas:
+  category: public.app-category.video
+  entitlements: build/entitlements.mas.plist
+  entitlementsInherit: build/entitlements.mas.inherit.plist
+  provisioningProfile: build/embedded.provisionprofile # Required for Store
+
+# Linux Configuration (Flathub / Flatpak)
+linux:
+  target:
+    - AppImage
+    - deb
+    - flatpak # Essential for Flathub
+  category: AudioVideo;Recorder;Audio;
+  icon: assets/icon.png
+  maintainer: Ajarn Spencer Littlewood <https://github.com/AjarnSpencer>
+
+flatpak:
+  runtime: org.freedesktop.Platform
+  runtimeVersion: "23.08"
+  sdk: org.freedesktop.Sdk
+  finishArgs:
+    - --share=ipc
+    - --share=network
+    - --socket=x11
+    - --socket=wayland
+    - --socket=pulseaudio # Required for capture/playback
+    - --device=all
+    - --filesystem=xdg-documents:rw
+    - --talk-name=org.freedesktop.Notifications
+
+publish:
+  provider: github
+  owner: AjarnSpencer
+  repo: AI-Voice-Studio
