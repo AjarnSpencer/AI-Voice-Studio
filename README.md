@@ -24,7 +24,7 @@
 ---
 
 <p align="center">
-  <img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai-voice-studio-narrator-mode.png alt="AI Voice Studio Academy Narrator Mode UI" width="60%" style="text-align:center;">
+  <img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai-voice-studio-narrator-mode.png" alt="AI Voice Studio Academy Narrator Mode UI" width="60%" style="text-align:center;">
 </p>
 
 ## 🌍 Supported Languages (Hybrid Registry)
