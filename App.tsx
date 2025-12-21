@@ -535,9 +535,11 @@ const App: React.FC = () => {
         } catch (chunkErr: any) { throw new Error(`Sequence ${i+1} Failed: ${chunkErr.message}`); }
       }
       
-      const concatenated = concatenateBuffers(audioParts);
       const isMpeg = narrationProvider === 'elevenlabs' || narrationProvider === 'resemble';
-      setAudioUrl(URL.createObjectURL(isMpeg ? new globalThis.Blob([concatenated], { type: 'audio/mpeg' }) : new globalThis.Blob([pcmToWavBlob(concatenated, 24000, 1)], { type: 'audio/wav' })));
+      const audioBlob = isMpeg
+        ? new globalThis.Blob([concatenateBuffers(audioParts)], { type: 'audio/mpeg' })
+        : pcmToWavBlob(concatenateBuffers(audioParts), 24000, 1) as Blob;
+      setAudioUrl(URL.createObjectURL(audioBlob));
     } catch (err: any) { setError(err.message); } finally { setIsGenerating(false); }
   };
 
