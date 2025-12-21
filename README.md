@@ -21,10 +21,6 @@
 - **Pronunciation Dictionary**: Define custom rules for technical terms, names, or localized jargon.
 - **Store-Ready Architecture**: Full support for Mac App Store (MAS) Sandboxing, Microsoft AppX, and Linux Flatpak distribution.
 
-<p align="center">
-  <img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai-voice--studio%20(1).png" alt="AI Voice Studio Academyr" width="60%" style="text-align:center;">
-</p>
-
 ---
 
 ## 🌍 Supported Languages (Hybrid Registry)
