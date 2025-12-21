@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
-import { GoogleGenAI, LiveServerMessage, Modality, Blob } from '@google/genai';
+import { GoogleGenAI, LiveServerMessage, Modality, Blob as GenAiBlob } from '@google/genai';
 import { MicrophoneIcon, StopCircleIcon, UserIcon, SparklesIcon, PlusIcon, KeyIcon, BookOpenIcon, ArrowDownTrayIcon, ArrowUpTrayIcon, InformationCircleIcon, TrashIcon } from './components/icons';
 import { CustomVoiceModal } from './components/CustomVoiceModal';
 import { ApiKeyModal } from './components/ApiKeyModal';
@@ -396,7 +396,7 @@ const App: React.FC = () => {
             scriptProcessorRef.current = inputAudioContextRef.current!.createScriptProcessor(4096, 1, 1);
             scriptProcessorRef.current.onaudioprocess = (e) => {
               const input = e.inputBuffer.getChannelData(0);
-              const pcmBlob: Blob = { data: encode(new Uint8Array(new Int16Array(input.map(f => f * 32768)).buffer)), mimeType: 'audio/pcm;rate=16000' };
+              const pcmBlob: GenAiBlob = { data: encode(new Uint8Array(new Int16Array(input.map(f => f * 32768)).buffer)), mimeType: 'audio/pcm;rate=16000' };
               sessionPromise.then(s => s.sendRealtimeInput({ media: pcmBlob }));
             };
             source.connect(scriptProcessorRef.current);
