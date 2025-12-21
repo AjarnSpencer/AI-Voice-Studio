@@ -74,6 +74,24 @@ The Universal Translation Layer and multi-engine synthesis now support the follo
 
 ---
 
+# 🎙️ AI Voice Studio (Advanced Multi-Engine Suite)
+
+<p align="center">
+  <img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/appicon_x4.png" alt="AI Voice Studio Banner" width="70%" style="text-align:center;">
+</p>
+
+### Narrator Creator Academy help Section
+<p align="center">
+  <img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai-voice--studio%20(1).png" alt="AI Voice Studio Academy" width="60%" style="text-align:center;">
+</p>
+
+<p align="center"><img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai--studio%20(4).pnghttps://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai--studio%20(4).png" alt="AI Voice Studio Academy tutorials" width="60%" style="text-align:center;"></p>
+
+<p align="center"><img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai--studio%20(3).png" alt="AI Voice Studio Academy" width="60%" style="text-align:center;"></p>
+
+<p align="center"><img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai--studio%20(2).png" alt="AI Voice Studio Academy" width="60%" style="text-align:center;"></p>
+
+
 ## 🛠️ How it Works
 
 ### 1. Neural Identity Analysis
