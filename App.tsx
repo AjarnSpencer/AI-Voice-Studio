@@ -537,7 +537,7 @@ const App: React.FC = () => {
       
       const concatenated = concatenateBuffers(audioParts);
       const isMpeg = narrationProvider === 'elevenlabs' || narrationProvider === 'resemble';
-      setAudioUrl(URL.createObjectURL(isMpeg ? new globalThis.Blob([concatenated], { type: 'audio/mpeg' }) : pcmToWavBlob(concatenated, 24000, 1)));
+      setAudioUrl(URL.createObjectURL(isMpeg ? new globalThis.Blob([concatenated], { type: 'audio/mpeg' }) : new globalThis.Blob([pcmToWavBlob(concatenated, 24000, 1)], { type: 'audio/wav' })));
     } catch (err: any) { setError(err.message); } finally { setIsGenerating(false); }
   };
 
