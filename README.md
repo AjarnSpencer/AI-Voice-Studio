@@ -24,7 +24,7 @@
 ---
 
 <p align="center">
-  <img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai-voice-studio-narrator-mode.png" alt="AI Voice Studio Academy Narrator Mode UI" width="60%" style="text-align:center;">
+  <img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai-voice-studio-narrator-mode.png" alt="AI Voice Studio Academy Narrator Mode UI" width="90%" style="text-align:center;">
 </p>
 
 ## 🌍 Supported Languages (Hybrid Registry)
@@ -76,14 +76,14 @@ The Universal Translation Layer and multi-engine synthesis now support the follo
 
 ### Narrator Creator Academy help Section
 <p align="center">
-  <img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai-voice--studio%20(1).png" alt="AI Voice Studio Academy" width="60%" style="text-align:center;">
+  <img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai-voice--studio%20(1).png" alt="AI Voice Studio Academy" width="90%" style="text-align:center;">
 </p>
 
-<p align="center"><img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai--studio%20(4).pnghttps://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai--studio%20(4).png" alt="AI Voice Studio Academy tutorials" width="60%" style="text-align:center;"></p>
+<p align="center"><img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai--studio%20(4).pnghttps://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai--studio%20(4).png" alt="AI Voice Studio Academy tutorials" width="90%" style="text-align:center;"></p>
 
-<p align="center"><img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai--studio%20(3).png" alt="AI Voice Studio Academy" width="60%" style="text-align:center;"></p>
+<p align="center"><img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai--studio%20(3).png" alt="AI Voice Studio Academy" width="90%" style="text-align:center;"></p>
 
-<p align="center"><img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai--studio%20(2).png" alt="AI Voice Studio Academy" width="60%" style="text-align:center;"></p>
+<p align="center"><img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/ai--studio%20(2).png" alt="AI Voice Studio Academy" width="90%" style="text-align:center;"></p>
 
 
 ## 🛠️ How it Works
