@@ -1,7 +1,7 @@
 # 🎙️ AI Voice Studio (Advanced Multi-Engine Suite)
 
 <p align="center">
-  <img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/appicon.png" alt="AI Voice Studio Banner" width="30%" style="text-align:center;">
+  <img src="https://github.com/AjarnSpencer/AI-Voice-Studio/blob/main/assets/appicon_x4.png" alt="AI Voice Studio Banner" width="30%" style="text-align:center;">
 </p>
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-teal.svg)](https://opensource.org/licenses/Apache-2.0)
