@@ -12,6 +12,8 @@
 
 ---
 
+### Download on the Relases Page <a href="https://github.com/AjarnSpencer/AI-Voice-Studio/releases" alt="Download Releases"> Download Realeases</a>
+
 ## 🚀 Key Features
 
 - **Multi-Engine Synthesis**: Seamlessly switch between **Gemini 2.5/3.0**, **ElevenLabs Multilingual v2**, and **Resemble AI**.
