@@ -535,11 +535,9 @@ const App: React.FC = () => {
         } catch (chunkErr: any) { throw new Error(`Sequence ${i+1} Failed: ${chunkErr.message}`); }
       }
       
+      const concatenated = concatenateBuffers(audioParts);
       const isMpeg = narrationProvider === 'elevenlabs' || narrationProvider === 'resemble';
-      const audioBlob = isMpeg
-        ? new globalThis.Blob([concatenateBuffers(audioParts)], { type: 'audio/mpeg' })
-        : pcmToWavBlob(concatenateBuffers(audioParts), 24000, 1) as Blob;
-      setAudioUrl(URL.createObjectURL(audioBlob));
+      setAudioUrl(URL.createObjectURL(isMpeg ? new globalThis.Blob([concatenated], { type: 'audio/mpeg' }) : pcmToWavBlob(concatenated, 24000, 1)));
     } catch (err: any) { setError(err.message); } finally { setIsGenerating(false); }
   };
 
@@ -701,7 +699,7 @@ const App: React.FC = () => {
             </div>
             <div className="flex flex-col flex-grow min-h-[300px]">
                  <div className="flex justify-between items-center mb-2">
-                    <label className="text-[9px] font-black text-gray-500 uppercase tracking-widest">NARATIVE MANUSCRIPT (PROSODY STACK ACTIVE (PROSODY STACK ACTIVE)</label>
+                    <label className="text-[9px] font-black text-gray-500 uppercase tracking-widest">NARRATIVE MANUSCRIPT (PROSODY STACK ACTIVE)</label>
                     <div className="flex gap-3">
                        <button onClick={exportScript} className="text-[8px] text-gray-500 hover:text-teal-400 font-black uppercase flex items-center gap-1 transition-colors"><ArrowDownTrayIcon className="w-3 h-3" /> Export Script</button>
                        <button onClick={importScript} className="text-[8px] text-gray-500 hover:text-teal-400 font-black uppercase flex items-center gap-1 transition-colors"><ArrowUpTrayIcon className="w-3 h-3" /> Import Script</button>
