@@ -12,7 +12,7 @@
 
 ---
 
-### Download on the Relases Page <a href="https://github.com/AjarnSpencer/AI-Voice-Studio/releases" alt="Download Releases"> Download Realeases</a>
+### Download on the Releases Page <a href="https://github.com/AjarnSpencer/AI-Voice-Studio/releases" alt="Download Releases"> Download Releases</a>
 
 ## 🚀 Key Features
 
