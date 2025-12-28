@@ -12,7 +12,7 @@
 
 ---
 
-### Download on the Releases Page <a href="https://github.com/AjarnSpencer/AI-Voice-Studio/releases" alt="Download Releases"> Download Releases</a>
+### Download on the Releases Page <a href="https://github.com/AjarnSpencer/AI-Voice-Studio/releases" alt="Download Releases"> Download Releases</a>  Or <a href="https://new-ai-voice-studio-594226924032.us-west1.run.app/">TRY THE APP HOSTED ON GOOGLE CLOUD</a>
 
 ## 🚀 Key Features
 
